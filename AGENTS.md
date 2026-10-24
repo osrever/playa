@@ -1,6 +1,6 @@
 # Working with Codex
 
-This repository contains the original SofiPlaya PWA source recovered from the ChatGPT Sites project.
+This repository contains the original Playa PWA source recovered from the ChatGPT Sites project.
 
 ## Development
 - Read the existing implementation before changing behavior; keep the current React, TypeScript, Vite, and Vitest structure.
@@ -9,6 +9,8 @@ This repository contains the original SofiPlaya PWA source recovered from the Ch
 - Do not commit secrets. Keep local API keys in an untracked .env file; .env.example is safe to edit.
 
 ## Production boundary
-- The live application is hosted in ChatGPT Sites at https://bano-sanlucar.folivares632902.chatgpt.site.
-- Treat this repository as a development copy. Do not publish, deploy, change the live Site, or modify its access settings unless the user explicitly asks for that action.
-- Do not edit .openai/hosting.json or trigger a production release as part of routine development.
+- This repository is the Playa version published with GitHub Pages.
+- The separate original application remains hosted at https://bano-sanlucar.folivares632902.chatgpt.site.
+- Changes here must not modify or deploy the separate ChatGPT Sites application.
+- GitHub Pages builds with pnpm run build:pages and publishes dist through .github/workflows/deploy.yml on pushes to main.
+- Keep .openai/hosting.json unchanged; pnpm run build retains the original Sites packaging for compatibility.

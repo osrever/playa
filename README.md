@@ -1,6 +1,16 @@
-# SofiPlaya
+# Playa
 
 Aplicación web PWA para estimar las mejores franjas de baño en Sanlúcar de Barrameda entre las 09:00 y las 21:00. Combina mareas, meteorología horaria y un motor de puntuación explicable de 0 a 100.
+
+## Publicación
+
+Esta versión se llama **Playa** y se publica en GitHub Pages desde este repositorio. La aplicación original de ChatGPT Sites se mantiene independiente.
+
+- Repositorio: https://github.com/osrever/playa
+- Web: https://osrever.github.io/playa/
+- Compilación para Pages: `pnpm run build:pages`.
+- En Settings → Pages, seleccionar GitHub Actions. Los cambios en `main` activan el workflow de publicación.
+- `pnpm run build` conserva el empaquetado original para Sites; no lo necesita GitHub Pages.
 
 ## Stack
 
@@ -36,9 +46,9 @@ Mareas:
 ## Instalación
 
 ```bash
-npm install
+pnpm install --frozen-lockfile
 cp .env.example .env
-npm run dev
+pnpm run dev
 ```
 
 Abre la URL local que indique Vite.
@@ -97,11 +107,11 @@ El índice UV se muestra en las tarjetas principales y en los resúmenes horario
 ## Comandos
 
 ```bash
-npm run lint
-npm run typecheck
-npm run test
-npm run build
-npm run preview
+pnpm run lint
+pnpm run typecheck
+pnpm run test
+pnpm run build
+pnpm run preview
 ```
 
 ## PWA en iPhone

@@ -54,7 +54,7 @@ function App() {
     <main className="app-shell">
       <header className="topbar">
         <div>
-          <p>SofiPlaya</p>
+          <p>Playa</p>
           <h1>Sanlúcar de Barrameda</h1>
         </div>
         <Waves aria-hidden="true" />
